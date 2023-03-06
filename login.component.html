@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mt-3">
+            <form action="" name="form" (ngSubmit)="f.form.valid && submit()" #f="ngForm">
+                <div class="form-group">
+                    <label for="" class="form-label">username</label>
+                    <input type="text" name="username" id="" class="form-control" [(ngModel)]="username"
+                        #uname="ngModel" pattern="[a-zA-Z1-10]{6,}" required title="Atleast 3letters 3numeraic">
+                    <label for="" class="text-danger" *ngIf="f.submitted && !uname.valid">username</label>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" name="password" id="" class="form-control" [(ngModel)]="password"
+                        #pwd="ngModel">
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="submit " class="btn btn-success" [disabled]="!f.form.valid">Login</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="reset" class="btn btn-danger">Cancel</button>
+                    </div>
+
+                    <div class="col-md-4"></div>
+
+
+                </div>
+            </form>
+            
+        </div>
+ 
+    </div>
+</div>

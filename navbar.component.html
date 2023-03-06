@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<div>
+<nav>
+    <ul>
+<li><a routerLink="/user/home"> home <i class="fa fa-home"></i></a></li>
+<li><a routerLink="/user/about">about <i class="fa fa-address-card"></i></a></li>
+<li><a routerLink="/user/service">service <i class="fa  fa-servicestack"></i></a></li>
+<li><a routerLink="/user/menu">menu <i class="fa  fa-bars"></i></a></li>
+<li><a routerLink="/user/product">product <i class="fa fa-plus"></i></a></li>
+
+
+
+    </ul>
+
+</nav>
+
+</div>
+<div class="log">
+    <button (click)="logout() "> logout</button>
+</div>
+
+<router-outlet></router-outlet>
