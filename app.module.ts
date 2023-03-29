@@ -1,41 +1,43 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import{CarouselModule} from 'ngx-bootstrap/carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+import { NavComponent } from './nav/nav.component';
+import { HeaderComponent } from './header/header.component';
+// import { CoursesComponent } from './courses/courses.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
+import { CarouselComponent } from './carousel/carousel.component';
 import { MenuComponent } from './menu/menu.component';
-import { ViewmenuComponent } from './viewmenu/viewmenu.component';
-import { AddproductComponent } from './addproduct/addproduct.component';
-import { ProductComponent } from './product/product.component';
-// import { AboutComponent } from './about/about.component';
-import { ServicesComponent } from './services/services.component';
-// import { FontawesomeComponent } from './fontawesome/fontawesome.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    NavbarComponent,
-    HomeComponent,
     LoginComponent,
-    MenuComponent,
-    ViewmenuComponent,
-    AddproductComponent,
-    ProductComponent,
-    // AboutComponent,
-    ServicesComponent,
-  
+    HomeComponent,
+    NavComponent,
+    HeaderComponent,
+    // CoursesComponent,
+    AboutComponent,
+    GalleryComponent,
+    ContactComponent,
+    CarouselComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-
+    FormsModule,
+    CarouselModule.forRoot()
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

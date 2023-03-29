@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'reshmapro'`, () => {
+  it(`should have as title 'reshma'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('reshmapro');
+    expect(app.title).toEqual('reshma');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('reshmapro app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('reshma app is running!');
   });
 });
